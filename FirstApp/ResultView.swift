@@ -25,6 +25,7 @@ class ResultView: UIView {
     private func setupView() {
             
         
+        
         // Title set-up
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.adjustsFontForContentSizeCategory = true
@@ -53,7 +54,10 @@ class ResultView: UIView {
         backButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
         backButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
+        //image
+        
     }
+    
     
     
     

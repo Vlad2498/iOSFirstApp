@@ -296,6 +296,12 @@
                     <view key="view" contentMode="scaleToFill" id="cbI-NN-ySn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-1e-8yU">
+                                <rect key="frame" x="0.0" y="44" width="383" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0ny-Wd-x5N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -303,10 +309,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G84-Be-o4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="75"/>
+            <point key="canvasLocation" x="1693.5999999999999" y="74.212893553223395"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1.png" width="480" height="852"/>
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>

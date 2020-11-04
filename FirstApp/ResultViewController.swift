@@ -21,6 +21,9 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            
+      
+        
         
         resultView.backButton.addTarget(self, action: #selector(backButtonHandler), for: .touchUpInside)
         // Do any additional setup after loading the view.
@@ -30,6 +33,7 @@ class ResultViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
 
+    
     /*
     // MARK: - Navigation
 
