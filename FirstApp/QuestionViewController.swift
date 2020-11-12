@@ -13,9 +13,14 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var buttonAnswerB: UIButton!
     @IBOutlet weak var buttonAnswerC: UIButton!
     @IBOutlet weak var buttonAnswerD: UIButton!
+    @IBOutlet weak var questionLabel: UILabel!
     
     private var haveWon = false
-    var question: Question?
+    var question: Question? {
+        didSet{
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +29,14 @@ class QuestionViewController: UIViewController {
         //Configuration of the buttons
         buttons.forEach{(button) in button?.layer.cornerRadius = 20}
        
+        //        questionLabel.clipsToBounds = true
+        //        questionLabel.layer.cornerRadius = 20
+        //        questionLabel.backgroundColor = .systemTeal
         
-        //
-//        questionLabel.text = question?.question
+        //configure the question label
+        questionLabel.text = question?.question
+
+        //shuffle button options
         buttons.shuffle()
         let correctButton = buttons.removeFirst()
         correctButton?.setTitle(question?.correctAnswer, for: .normal)
