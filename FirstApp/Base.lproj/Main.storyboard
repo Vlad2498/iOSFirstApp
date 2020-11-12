@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Owt-nD-ORy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -53,7 +53,7 @@
         <!--Lab-->
         <scene sceneID="BV5-j3-wjL">
             <objects>
-                <viewController id="w0c-7E-YbH" sceneMemberID="viewController">
+                <viewController id="w0c-7E-YbH" customClass="StartViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tUz-EL-rKB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
         <scene sceneID="Uq3-pV-FGS">
             <objects>
                 <viewController interfaceStyle="dark" id="iPR-g6-rED" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Duj-lN-C5b">
+                    <view key="view" contentMode="scaleToFill" id="Duj-lN-C5b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -277,7 +277,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bs5-af-iqU"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" red="0.54172079587916733" green="1" blue="0.21753068651015439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zSd-fI-VIF" firstAttribute="centerX" secondItem="JOw-j3-DvJ" secondAttribute="centerX" id="HLl-qI-6IQ"/>
                             <constraint firstItem="zSd-fI-VIF" firstAttribute="centerY" secondItem="JOw-j3-DvJ" secondAttribute="centerY" id="hko-JU-uxF"/>
@@ -323,9 +323,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
