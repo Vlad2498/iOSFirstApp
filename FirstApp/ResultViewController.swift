@@ -30,7 +30,7 @@ class ResultViewController: UIViewController {
     }
     
     @objc private func backButtonHandler() {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 
     

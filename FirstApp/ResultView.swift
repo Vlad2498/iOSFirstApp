@@ -45,6 +45,16 @@ class ResultView: UIView {
         resultLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
         
+        //Showing the logo
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "AppLogo"))
+//        imageView.clipsToBounds = true
+        imageView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
+        addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 20).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
+        
+        
         //Go back button set-up
         backButton.setTitleColor(.systemBlue, for: .normal)
         backButton.setTitle("Back to start", for: .normal)

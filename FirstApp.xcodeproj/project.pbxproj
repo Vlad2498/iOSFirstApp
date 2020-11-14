@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B057E392549754100F5484D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B057E382549754100F5484D /* 1.png */; };
+		7B592C7F256035B20035564B /* QuestionsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B592C7E256035B20035564B /* QuestionsResult.swift */; };
 		7B84DE6F255299120022F9F5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84DE6E255299120022F9F5 /* ResultViewController.swift */; };
 		7B84DE7425529BD10022F9F5 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84DE7325529BD10022F9F5 /* ResultView.swift */; };
+		7BF1C328256042260098786C /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */; };
+		7BF1C329256042260098786C /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */; };
 		F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5043A99255DBF8C00DFFC30 /* Question.swift */; };
 		F5043A9F255DC33600DFFC30 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5043A9E255DC33600DFFC30 /* StartViewController.swift */; };
 		F51B007025472529001CA963 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B006F25472529001CA963 /* QuestionViewController.swift */; };
@@ -43,8 +46,11 @@
 
 /* Begin PBXFileReference section */
 		7B057E382549754100F5484D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7B592C7E256035B20035564B /* QuestionsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResult.swift; sourceTree = "<group>"; };
 		7B84DE6E255299120022F9F5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7B84DE7325529BD10022F9F5 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5043A99255DBF8C00DFFC30 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F5043A9E255DC33600DFFC30 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F51B006F25472529001CA963 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 		F553380D2542CC8800396C05 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */,
+				7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */,
 				7B057E382549754100F5484D /* 1.png */,
 				F553380E2542CC8800396C05 /* AppDelegate.swift */,
 				F55338102542CC8800396C05 /* SceneDelegate.swift */,
@@ -127,6 +135,7 @@
 				7B84DE7325529BD10022F9F5 /* ResultView.swift */,
 				F5043A99255DBF8C00DFFC30 /* Question.swift */,
 				F5043A9E255DC33600DFFC30 /* StartViewController.swift */,
+				7B592C7E256035B20035564B /* QuestionsResult.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -280,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B592C7F256035B20035564B /* QuestionsResult.swift in Sources */,
 				F55338132542CC8800396C05 /* ViewController.swift in Sources */,
 				F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */,
 				F51B007025472529001CA963 /* QuestionViewController.swift in Sources */,
+				7BF1C328256042260098786C /* GameResult+CoreDataClass.swift in Sources */,
 				F553380F2542CC8800396C05 /* AppDelegate.swift in Sources */,
+				7BF1C329256042260098786C /* GameResult+CoreDataProperties.swift in Sources */,
 				F55338192542CC8800396C05 /* FirstApp.xcdatamodeld in Sources */,
 				F5043A9F255DC33600DFFC30 /* StartViewController.swift in Sources */,
 				F55338112542CC8800396C05 /* SceneDelegate.swift in Sources */,

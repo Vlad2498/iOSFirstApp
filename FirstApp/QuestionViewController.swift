@@ -33,9 +33,9 @@ class QuestionViewController: UIViewController {
         //Configuration of the buttons
         buttons.forEach{(button) in button?.layer.cornerRadius = 20}
        
-        //        questionLabel.clipsToBounds = true
-        //        questionLabel.layer.cornerRadius = 20
-        //        questionLabel.backgroundColor = .systemTeal
+                questionLabel.clipsToBounds = true
+                questionLabel.layer.cornerRadius = 20
+                questionLabel.backgroundColor = .systemTeal
         
         //configure the question label
         questionLabel.text = question?.question
@@ -84,13 +84,15 @@ class QuestionViewController: UIViewController {
     private func showRightAnswerAlert(button: UIButton) {
         haveWon = true
         rightAnswers += 1
+        button.backgroundColor = .green
         
         let alertController = UIAlertController(title: "You're right", message: "This is the right answer", preferredStyle: .alert)
                 
-        let action1 = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+        let action1 = UIAlertAction(title: "Great!", style: .default) { (action:UIAlertAction) in
+            
             print("Pressed OK");
             self.goToNextScreen()
-            button.backgroundColor = .green
+            
         }
 
 //        let action2 = UIAlertAction(title: "Great", style: .cancel) { (action:UIAlertAction) in
@@ -117,10 +119,11 @@ class QuestionViewController: UIViewController {
     
     private func showWrongAnswerAlert(button: UIButton) {
         haveWon = false
-        let alertController = UIAlertController(title: "WRONG", message: "Wrong Again", preferredStyle: UIAlertController.Style.alert)
+        button.backgroundColor = .red
+        let alertController = UIAlertController(title: "WRONG", message: "I'm affraid this is the wrong answer", preferredStyle: UIAlertController.Style.alert)
         
         let action_1 = UIAlertAction(title: "Oh no...", style: .default, handler:{(_) in alertController.dismiss(animated: true, completion: nil)
-            button.backgroundColor = .red
+            
             self.goToNextScreen()
         })
         

@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Question {
+struct Question : Decodable {
     
-    enum QuestionType : String {
+    enum QuestionType : String , Decodable{
         case multiple
     }
     
-    enum Difficulty: String {
+    enum Difficulty: String , Decodable{
         case easy, medium, hard
     }
     
