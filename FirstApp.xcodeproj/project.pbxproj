@@ -25,6 +25,7 @@
 		F553381E2542CC8C00396C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F553381C2542CC8C00396C05 /* LaunchScreen.storyboard */; };
 		F55338292542CC8D00396C05 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55338282542CC8D00396C05 /* FirstAppTests.swift */; };
 		F55338342542CC8D00396C05 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55338332542CC8D00396C05 /* FirstAppUITests.swift */; };
+		F5ABD1FA2562B0AF0094048A /* HighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F553382F2542CC8D00396C05 /* FirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55338332542CC8D00396C05 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		F55338352542CC8D00396C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				F5043A99255DBF8C00DFFC30 /* Question.swift */,
 				F5043A9E255DC33600DFFC30 /* StartViewController.swift */,
 				7B592C7E256035B20035564B /* QuestionsResult.swift */,
+				F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B592C7F256035B20035564B /* QuestionsResult.swift in Sources */,
+				F5ABD1FA2562B0AF0094048A /* HighscoreTableViewController.swift in Sources */,
 				F55338132542CC8800396C05 /* ViewController.swift in Sources */,
 				F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */,
 				F51B007025472529001CA963 /* QuestionViewController.swift in Sources */,

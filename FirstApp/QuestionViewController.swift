@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class QuestionViewController: UIViewController {
 
@@ -147,6 +148,7 @@ class QuestionViewController: UIViewController {
     private func goToNextScreen(){
         guard !questions.isEmpty,
               let questionViewController = storyboard?.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController else {
+            saveGameResult()
             performSegue(withIdentifier: "ResultView", sender: nil)
             return
         }
@@ -157,6 +159,18 @@ class QuestionViewController: UIViewController {
         navigationController?.pushViewController(questionViewController, animated: true)
     }
     
+    
+    private func saveGameResult() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        if let gameResult = NSEntityDescription.insertNewObject(forEntityName: "GameResult", into: managedObjectContext) as? GameResult {
+            gameResult.numberOfQuestions = Int32(numberOfQuestions)
+            gameResult.rightAnswers = Int32(rightAnswers)
+            gameResult.date = Date()
+            appDelegate.saveContext()
+        }
+    }
     
     // MARK: - Navigation
 

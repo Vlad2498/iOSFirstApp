@@ -13,6 +13,8 @@ class StartViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
+    
+    
     override func viewDidLoad() {
         startButton.isEnabled = false
         super.viewDidLoad()
@@ -21,6 +23,14 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
+
+    @IBAction func highscoreButtonHandler(_ sender: Any) {
+        let highscoreTableViewController = HighscoreTableViewController()
+        navigationController?.pushViewController(highscoreTableViewController, animated: true)
+    }
+
+
     private func downloadQuestions(amount: Int) {
         guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple")
         else {

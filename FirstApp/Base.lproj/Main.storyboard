@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Owt-nD-ORy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -67,10 +67,20 @@
                                     <segue destination="yxk-bi-lF4" kind="show" id="mDh-if-bJs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-V1-Kxh">
+                                <rect key="frame" x="132" y="374.5" width="111" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Highscore"/>
+                                <connections>
+                                    <action selector="highscoreButtonHandler:" destination="w0c-7E-YbH" eventType="touchUpInside" id="6Li-4r-ir7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LF1-bG-Nnz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Xpc-V1-Kxh" firstAttribute="centerX" secondItem="QNQ-dH-5s8" secondAttribute="centerX" id="9Jb-22-qwi"/>
+                            <constraint firstItem="Xpc-V1-Kxh" firstAttribute="top" secondItem="QNQ-dH-5s8" secondAttribute="bottom" constant="20" id="AL7-63-bbM"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="IqV-6E-HmK"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerY" secondItem="tUz-EL-rKB" secondAttribute="centerY" id="h1v-1k-AzU"/>
                         </constraints>
