@@ -31,7 +31,7 @@ class HighscoreTableViewController: UITableViewController {
     private func setupFetchedResultsController() {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        let managedObjectContext = DatabaseManager.shared.managedObjectContext
         
         let request = NSFetchRequest<GameResult>(entityName: "GameResult")
         let dateSort = NSSortDescriptor(key: "date", ascending: false)
@@ -64,7 +64,9 @@ class HighscoreTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "highschoreIdentifier", for: indexPath)
 
         let gameResult = fetchedResultsController.object(at: indexPath)
-        cell.textLabel?.text = "Out of  \(gameResult.numberOfQuestions) questions you answered \(gameResult.rightAnswers) right."
+        
+//        cell.textLabel?.text = "Out of  \(gameResult.numberOfQuestions) questions you answered \(gameResult.rightAnswers) right."
+        cell.textLabel?.text = "\(gameResult.date)"
 
         return cell
     }

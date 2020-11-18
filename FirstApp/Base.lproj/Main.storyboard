@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Owt-nD-ORy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Owt-nD-ORy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="-3235" y="76"/>
         </scene>
-        <!--Lab-->
+        <!--Game Page-->
         <scene sceneID="BV5-j3-wjL">
             <objects>
                 <viewController id="w0c-7E-YbH" customClass="StartViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,17 +75,29 @@
                                     <action selector="highscoreButtonHandler:" destination="w0c-7E-YbH" eventType="touchUpInside" id="6Li-4r-ir7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-4h-oYw">
+                                <rect key="frame" x="147" y="436.5" width="81" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Click Me!">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="exampleButtonHandler:" destination="w0c-7E-YbH" eventType="touchUpInside" id="7kD-kz-heB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LF1-bG-Nnz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Xpc-V1-Kxh" firstAttribute="centerX" secondItem="QNQ-dH-5s8" secondAttribute="centerX" id="9Jb-22-qwi"/>
                             <constraint firstItem="Xpc-V1-Kxh" firstAttribute="top" secondItem="QNQ-dH-5s8" secondAttribute="bottom" constant="20" id="AL7-63-bbM"/>
+                            <constraint firstItem="4Ab-4h-oYw" firstAttribute="centerX" secondItem="Xpc-V1-Kxh" secondAttribute="centerX" id="CzN-IC-bmB"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="IqV-6E-HmK"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerY" secondItem="tUz-EL-rKB" secondAttribute="centerY" id="h1v-1k-AzU"/>
+                            <constraint firstItem="4Ab-4h-oYw" firstAttribute="top" secondItem="Xpc-V1-Kxh" secondAttribute="bottom" constant="20" id="ocB-Au-6Vv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lab" id="727-5N-kKM"/>
+                    <navigationItem key="navigationItem" title="Game Page" id="727-5N-kKM"/>
                     <connections>
                         <outlet property="startButton" destination="QNQ-dH-5s8" id="CH8-XA-3Zr"/>
                     </connections>
@@ -276,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="-1426" y="769"/>
         </scene>
-        <!--Lab-->
+        <!--About Page-->
         <scene sceneID="kkU-la-n0X">
             <objects>
                 <viewController id="YVr-Kt-CSm" sceneMemberID="viewController">
@@ -301,7 +313,7 @@
                             <constraint firstItem="zSd-fI-VIF" firstAttribute="centerY" secondItem="JOw-j3-DvJ" secondAttribute="centerY" id="hko-JU-uxF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lab" id="PeJ-fA-641"/>
+                    <navigationItem key="navigationItem" title="About Page" id="PeJ-fA-641"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYD-g5-x3r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,6 +12,9 @@
 		7B84DE6F255299120022F9F5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84DE6E255299120022F9F5 /* ResultViewController.swift */; };
 		7B84DE7425529BD10022F9F5 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84DE7325529BD10022F9F5 /* ResultView.swift */; };
 		7BBD9C9725651CBA00BA1521 /* String+HtmlDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9C9625651CBA00BA1521 /* String+HtmlDecoding.swift */; };
+		7BBD9C9C2565204000BA1521 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9C9B2565204000BA1521 /* DatabaseManager.swift */; };
+		7BBD9CA12565229C00BA1521 /* GameResultDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9CA02565229C00BA1521 /* GameResultDatabaseManager.swift */; };
+		7BBD9CA62565295800BA1521 /* ExampleScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */; };
 		7BF1C328256042260098786C /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */; };
 		7BF1C329256042260098786C /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */; };
 		F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5043A99255DBF8C00DFFC30 /* Question.swift */; };
@@ -52,6 +55,9 @@
 		7B84DE6E255299120022F9F5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7B84DE7325529BD10022F9F5 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		7BBD9C9625651CBA00BA1521 /* String+HtmlDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HtmlDecoding.swift"; sourceTree = "<group>"; };
+		7BBD9C9B2565204000BA1521 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7BBD9CA02565229C00BA1521 /* GameResultDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultDatabaseManager.swift; sourceTree = "<group>"; };
+		7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleScrollViewController.swift; sourceTree = "<group>"; };
 		7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5043A99255DBF8C00DFFC30 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 				F51B006F25472529001CA963 /* QuestionViewController.swift */,
 				7B84DE6E255299120022F9F5 /* ResultViewController.swift */,
 				7B84DE7325529BD10022F9F5 /* ResultView.swift */,
+				7BBD9C9B2565204000BA1521 /* DatabaseManager.swift */,
+				7BBD9CA02565229C00BA1521 /* GameResultDatabaseManager.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 				F5043A9E255DC33600DFFC30 /* StartViewController.swift */,
 				F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */,
 				7BBD9C9625651CBA00BA1521 /* String+HtmlDecoding.swift */,
+				7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -313,12 +322,15 @@
 			files = (
 				7BBD9C9725651CBA00BA1521 /* String+HtmlDecoding.swift in Sources */,
 				7B592C7F256035B20035564B /* QuestionsResult.swift in Sources */,
+				7BBD9C9C2565204000BA1521 /* DatabaseManager.swift in Sources */,
+				7BBD9CA12565229C00BA1521 /* GameResultDatabaseManager.swift in Sources */,
 				F5ABD1FA2562B0AF0094048A /* HighscoreTableViewController.swift in Sources */,
 				F55338132542CC8800396C05 /* ViewController.swift in Sources */,
 				F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */,
 				F51B007025472529001CA963 /* QuestionViewController.swift in Sources */,
 				7BF1C328256042260098786C /* GameResult+CoreDataClass.swift in Sources */,
 				F553380F2542CC8800396C05 /* AppDelegate.swift in Sources */,
+				7BBD9CA62565295800BA1521 /* ExampleScrollViewController.swift in Sources */,
 				7BF1C329256042260098786C /* GameResult+CoreDataProperties.swift in Sources */,
 				F55338192542CC8800396C05 /* FirstApp.xcdatamodeld in Sources */,
 				F5043A9F255DC33600DFFC30 /* StartViewController.swift in Sources */,
