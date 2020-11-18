@@ -85,6 +85,11 @@
                                     <action selector="exampleButtonHandler:" destination="w0c-7E-YbH" eventType="touchUpInside" id="7kD-kz-heB"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-nv-R0R">
+                                <rect key="frame" x="20" y="84" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LF1-bG-Nnz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -92,13 +97,18 @@
                             <constraint firstItem="Xpc-V1-Kxh" firstAttribute="centerX" secondItem="QNQ-dH-5s8" secondAttribute="centerX" id="9Jb-22-qwi"/>
                             <constraint firstItem="Xpc-V1-Kxh" firstAttribute="top" secondItem="QNQ-dH-5s8" secondAttribute="bottom" constant="20" id="AL7-63-bbM"/>
                             <constraint firstItem="4Ab-4h-oYw" firstAttribute="centerX" secondItem="Xpc-V1-Kxh" secondAttribute="centerX" id="CzN-IC-bmB"/>
+                            <constraint firstItem="LF1-bG-Nnz" firstAttribute="trailing" secondItem="RYe-nv-R0R" secondAttribute="trailing" constant="20" id="FR1-cV-989"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="IqV-6E-HmK"/>
+                            <constraint firstItem="RYe-nv-R0R" firstAttribute="leading" secondItem="LF1-bG-Nnz" secondAttribute="leading" constant="20" id="J59-C3-gQr"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerY" secondItem="tUz-EL-rKB" secondAttribute="centerY" id="h1v-1k-AzU"/>
+                            <constraint firstItem="RYe-nv-R0R" firstAttribute="top" secondItem="LF1-bG-Nnz" secondAttribute="top" constant="40" id="hTj-UX-PHS"/>
                             <constraint firstItem="4Ab-4h-oYw" firstAttribute="top" secondItem="Xpc-V1-Kxh" secondAttribute="bottom" constant="20" id="ocB-Au-6Vv"/>
+                            <constraint firstItem="RYe-nv-R0R" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="tO7-kr-0Kl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Game Page" id="727-5N-kKM"/>
                     <connections>
+                        <outlet property="nameTextField" destination="RYe-nv-R0R" id="AjC-DP-NXo"/>
                         <outlet property="startButton" destination="QNQ-dH-5s8" id="CH8-XA-3Zr"/>
                     </connections>
                 </viewController>

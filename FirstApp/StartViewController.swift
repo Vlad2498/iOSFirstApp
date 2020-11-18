@@ -10,17 +10,29 @@ import UIKit
 class StartViewController: UIViewController {
     
     var questions: [Question] = []
+
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
     
     @IBOutlet weak var startButton: UIButton!
     
     
-    
+    // MARK: -DidLoad Function
     override func viewDidLoad() {
         startButton.isEnabled = false
         super.viewDidLoad()
         
         downloadQuestions(amount: 5)
-        // Do any additional setup after loading the view.
+        
+        //Settings for the text field
+        nameTextField.placeholder = "Type your name here"
+        nameTextField.delegate = self
+        nameTextField.returnKeyType = .done
+
+        if let name = UserDefaults.standard.string(forKey: "username"){
+            nameTextField.text = name
+        }
     }
     
 
@@ -79,4 +91,22 @@ class StartViewController: UIViewController {
         
     }
     
+}
+
+
+// MARK: -Text field delegate
+extension StartViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let name = textField.text else {
+            return
+        }
+        UserDefaults.standard.set(name, forKey: "username")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+    }
 }
