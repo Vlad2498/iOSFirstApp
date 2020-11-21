@@ -17,6 +17,7 @@
 		7BBD9CA62565295800BA1521 /* ExampleScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */; };
 		7BF1C328256042260098786C /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */; };
 		7BF1C329256042260098786C /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */; };
+		F500FA9625692833002346E4 /* HtmlDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500FA9525692833002346E4 /* HtmlDecoderTests.swift */; };
 		F5043A9A255DBF8C00DFFC30 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5043A99255DBF8C00DFFC30 /* Question.swift */; };
 		F5043A9F255DC33600DFFC30 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5043A9E255DC33600DFFC30 /* StartViewController.swift */; };
 		F51B007025472529001CA963 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B006F25472529001CA963 /* QuestionViewController.swift */; };
@@ -29,6 +30,7 @@
 		F553381E2542CC8C00396C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F553381C2542CC8C00396C05 /* LaunchScreen.storyboard */; };
 		F55338292542CC8D00396C05 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55338282542CC8D00396C05 /* FirstAppTests.swift */; };
 		F55338342542CC8D00396C05 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55338332542CC8D00396C05 /* FirstAppUITests.swift */; };
+		F579C259256933C400873811 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F579C258256933C400873811 /* CameraViewController.swift */; };
 		F5ABD1FA2562B0AF0094048A /* HighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,7 @@
 		7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleScrollViewController.swift; sourceTree = "<group>"; };
 		7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F500FA9525692833002346E4 /* HtmlDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlDecoderTests.swift; sourceTree = "<group>"; };
 		F5043A99255DBF8C00DFFC30 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F5043A9E255DC33600DFFC30 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F51B006F25472529001CA963 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		F553382F2542CC8D00396C05 /* FirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55338332542CC8D00396C05 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		F55338352542CC8D00396C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F579C258256933C400873811 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +115,10 @@
 			children = (
 				7BF1C326256042260098786C /* GameResult+CoreDataClass.swift */,
 				7BF1C327256042260098786C /* GameResult+CoreDataProperties.swift */,
+				7BBD9C9B2565204000BA1521 /* DatabaseManager.swift */,
 				7B592C7E256035B20035564B /* QuestionsResult.swift */,
 				F5043A99255DBF8C00DFFC30 /* Question.swift */,
+				7BBD9CA02565229C00BA1521 /* GameResultDatabaseManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -123,8 +129,6 @@
 				F51B006F25472529001CA963 /* QuestionViewController.swift */,
 				7B84DE6E255299120022F9F5 /* ResultViewController.swift */,
 				7B84DE7325529BD10022F9F5 /* ResultView.swift */,
-				7BBD9C9B2565204000BA1521 /* DatabaseManager.swift */,
-				7BBD9CA02565229C00BA1521 /* GameResultDatabaseManager.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -152,8 +156,8 @@
 		F553380D2542CC8800396C05 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				7BBD9C91256515EF00BA1521 /* Data */,
 				7BBD9C922565164D00BA1521 /* Game */,
+				7BBD9C91256515EF00BA1521 /* Data */,
 				7B057E382549754100F5484D /* 1.png */,
 				F553380E2542CC8800396C05 /* AppDelegate.swift */,
 				F55338102542CC8800396C05 /* SceneDelegate.swift */,
@@ -167,6 +171,7 @@
 				F5ABD1F92562B0AF0094048A /* HighscoreTableViewController.swift */,
 				7BBD9C9625651CBA00BA1521 /* String+HtmlDecoding.swift */,
 				7BBD9CA52565295800BA1521 /* ExampleScrollViewController.swift */,
+				F579C258256933C400873811 /* CameraViewController.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				F55338282542CC8D00396C05 /* FirstAppTests.swift */,
+				F500FA9525692833002346E4 /* HtmlDecoderTests.swift */,
 				F553382A2542CC8D00396C05 /* Info.plist */,
 			);
 			path = FirstAppTests;
@@ -337,6 +343,7 @@
 				F55338112542CC8800396C05 /* SceneDelegate.swift in Sources */,
 				7B84DE7425529BD10022F9F5 /* ResultView.swift in Sources */,
 				7B84DE6F255299120022F9F5 /* ResultViewController.swift in Sources */,
+				F579C259256933C400873811 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F55338292542CC8D00396C05 /* FirstAppTests.swift in Sources */,
+				F500FA9625692833002346E4 /* HtmlDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

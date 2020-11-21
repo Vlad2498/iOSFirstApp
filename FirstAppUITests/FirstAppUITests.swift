@@ -39,4 +39,19 @@ class FirstAppUITests: XCTestCase {
             }
         }
     }
+    
+    func testGame() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        print(app.debugDescription)
+        
+        print(app.buttons)
+        app.buttons["Game"].tap()
+        print(app.buttons)
+        app.buttons["Start"].tap()
+        print(app.buttons)
+        app.buttons.element(boundBy: 2).tap()
+        XCTAssertEqual(app.alerts.count, 1)
+    }
 }

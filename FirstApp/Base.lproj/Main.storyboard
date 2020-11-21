@@ -59,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNQ-dH-5s8">
-                                <rect key="frame" x="161.5" y="312.5" width="52" height="42"/>
+                                <rect key="frame" x="161.5" y="252.5" width="52" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" red="0.30211986909999999" green="0.92685474909999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Start"/>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-V1-Kxh">
-                                <rect key="frame" x="132" y="374.5" width="111" height="42"/>
+                                <rect key="frame" x="132" y="314.5" width="111" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Highscore"/>
                                 <connections>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-4h-oYw">
-                                <rect key="frame" x="147" y="436.5" width="81" height="36"/>
+                                <rect key="frame" x="147" y="376.5" width="81" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Click Me!">
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
@@ -100,7 +100,7 @@
                             <constraint firstItem="LF1-bG-Nnz" firstAttribute="trailing" secondItem="RYe-nv-R0R" secondAttribute="trailing" constant="20" id="FR1-cV-989"/>
                             <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="IqV-6E-HmK"/>
                             <constraint firstItem="RYe-nv-R0R" firstAttribute="leading" secondItem="LF1-bG-Nnz" secondAttribute="leading" constant="20" id="J59-C3-gQr"/>
-                            <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerY" secondItem="tUz-EL-rKB" secondAttribute="centerY" id="h1v-1k-AzU"/>
+                            <constraint firstItem="QNQ-dH-5s8" firstAttribute="centerY" secondItem="tUz-EL-rKB" secondAttribute="centerY" constant="-60" id="h1v-1k-AzU"/>
                             <constraint firstItem="RYe-nv-R0R" firstAttribute="top" secondItem="LF1-bG-Nnz" secondAttribute="top" constant="40" id="hTj-UX-PHS"/>
                             <constraint firstItem="4Ab-4h-oYw" firstAttribute="top" secondItem="Xpc-V1-Kxh" secondAttribute="bottom" constant="20" id="ocB-Au-6Vv"/>
                             <constraint firstItem="RYe-nv-R0R" firstAttribute="centerX" secondItem="tUz-EL-rKB" secondAttribute="centerX" id="tO7-kr-0Kl"/>
