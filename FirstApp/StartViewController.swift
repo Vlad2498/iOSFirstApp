@@ -67,20 +67,38 @@ class StartViewController: UIViewController {
         let diff = Int(questionsDifficultyTextField.text ?? "0") ?? 0
         
         switch diff{
+        
+        case 0:
+            difficulty = ""
+            downloadQuestions(amount: nrQuestions, difficulty: difficulty)
+            
         case 1:
             difficulty = "easy"
+            downloadQuestions(amount: nrQuestions, difficulty: difficulty)
             
         case 2:
             difficulty = "medium"
+            downloadQuestions(amount: nrQuestions, difficulty: difficulty)
             
         case 3:
             difficulty = "hard"
+            downloadQuestions(amount: nrQuestions, difficulty: difficulty)
             
         default:
-            difficulty = ""
+            let alertController = UIAlertController(title: "Wrong Input", message: "Please type a number between 0 and 3", preferredStyle: UIAlertController.Style.alert)
+            
+            let action_1 = UIAlertAction(title: "Okay", style: .default, handler:{(_) in alertController.dismiss(animated: true, completion: nil)
+                
+            })
+            
+            alertController.addAction(action_1)
+            
+            alertController.view.tintColor = .systemOrange
+            self.present(alertController, animated: true, completion: nil)
         }
         print("Difficulty selected is:", difficulty)
-        downloadQuestions(amount: nrQuestions, difficulty: difficulty)
+        //calling the download questions function with the previously entered parameteres
+        
     }
     
 
