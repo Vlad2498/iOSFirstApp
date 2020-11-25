@@ -66,7 +66,7 @@ class HighscoreTableViewController: UITableViewController {
         let gameResult = fetchedResultsController.object(at: indexPath)
         
 //        cell.textLabel?.text = "Out of  \(gameResult.numberOfQuestions) questions you answered \(gameResult.rightAnswers) right."
-        cell.textLabel?.text = "\(gameResult.date)"
+        cell.textLabel?.text = "\(gameResult.date!)"
 
         return cell
     }

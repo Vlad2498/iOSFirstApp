@@ -14,37 +14,79 @@ class StartViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     
+    @IBOutlet weak var questionsNrTextField: UITextField!
+    
+    @IBOutlet weak var questionsDifficultyTextField: UITextField!
     
     @IBOutlet weak var startButton: UIButton!
     
+    var nrQuestions = 0
+    var difficulty = ""
     
     // MARK: -DidLoad Function
     override func viewDidLoad() {
         startButton.isEnabled = false
         super.viewDidLoad()
         
-        downloadQuestions(amount: 5)
+        hideKeyboardWhenTappingAround()
+        
+//        downloadQuestions(amount: 1)
         
         //Settings for the text field
         nameTextField.placeholder = "Type your name here"
         nameTextField.delegate = self
         nameTextField.returnKeyType = .done
+        
+        questionsNrTextField.returnKeyType = .done
 
         if let name = UserDefaults.standard.string(forKey: "username"){
             nameTextField.text = name
         }
+        
+        
     }
     
-
-
+   
+    
+    //handling press on highscore button
     @IBAction func highscoreButtonHandler(_ sender: Any) {
         let highscoreTableViewController = HighscoreTableViewController()
         navigationController?.pushViewController(highscoreTableViewController, animated: true)
     }
+    
+    
+    // Getting the number of questions
+     @IBAction func sendQuestionNumber(_ sender: Any) {
+//         print(questionsNrTextField.text!)
+        nrQuestions = Int(questionsNrTextField.text ?? "1") ?? 1
+        print("Number of questions selected is:", nrQuestions)
+     }
+    
+    //getting the question difficulty
+    @IBAction func sendQuestionsDifficulty(_ sender: Any) {
+        let diff = Int(questionsDifficultyTextField.text ?? "0") ?? 0
+        
+        switch diff{
+        case 1:
+            difficulty = "easy"
+            
+        case 2:
+            difficulty = "medium"
+            
+        case 3:
+            difficulty = "hard"
+            
+        default:
+            difficulty = ""
+        }
+        print("Difficulty selected is:", difficulty)
+        downloadQuestions(amount: nrQuestions, difficulty: difficulty)
+    }
+    
 
-
-    private func downloadQuestions(amount: Int) {
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple")
+    //function that downloads the number of questions mentioned
+    private func downloadQuestions(amount: Int, difficulty: String) {
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&difficulty=\(difficulty)&type=multiple")
         else {
             return
         }
@@ -111,5 +153,18 @@ extension StartViewController: UITextFieldDelegate {
         
         textField.resignFirstResponder()
         return true
+    }
+}
+
+// extension that withdraws the keyboard when the user presses anywhere
+extension UIViewController {
+    func hideKeyboardWhenTappingAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

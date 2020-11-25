@@ -11,6 +11,7 @@ class ResultView: UIView {
 
     private let titleLabel = UILabel()
     let resultLabel = UILabel()
+    let typeOfQuestionsLabel = UILabel()
     let backButton = UIButton()
     
     override init(frame: CGRect){
@@ -45,13 +46,30 @@ class ResultView: UIView {
         resultLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
         
+        //Type of questions setup:
+        typeOfQuestionsLabel.font = UIFont.preferredFont(forTextStyle: .callout)
+        typeOfQuestionsLabel.adjustsFontForContentSizeCategory = true
+        //not working
+        typeOfQuestionsLabel.lineBreakMode = .byWordWrapping
+        typeOfQuestionsLabel.numberOfLines = 0
+        typeOfQuestionsLabel.layoutMargins.left = 10
+        typeOfQuestionsLabel.layoutMargins.right = 10
+        
+        addSubview(typeOfQuestionsLabel)
+
+        typeOfQuestionsLabel.translatesAutoresizingMaskIntoConstraints = false
+        typeOfQuestionsLabel.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 20).isActive = true
+        typeOfQuestionsLabel.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
+        
+        
+        
         //Showing the logo
         let imageView = UIImageView(image: #imageLiteral(resourceName: "AppLogo"))
 //        imageView.clipsToBounds = true
         imageView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 20).isActive = true
+        imageView.topAnchor.constraint(equalTo: typeOfQuestionsLabel.bottomAnchor, constant: 20).isActive = true
         imageView.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
         
         
