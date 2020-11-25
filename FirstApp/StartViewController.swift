@@ -57,13 +57,14 @@ class StartViewController: UIViewController {
     
     // Getting the number of questions
      @IBAction func sendQuestionNumber(_ sender: Any) {
-//         print(questionsNrTextField.text!)
+
         nrQuestions = Int(questionsNrTextField.text ?? "1") ?? 1
         print("Number of questions selected is:", nrQuestions)
      }
     
     //getting the question difficulty
     @IBAction func sendQuestionsDifficulty(_ sender: Any) {
+        
         let diff = Int(questionsDifficultyTextField.text ?? "0") ?? 0
         
         switch diff{
@@ -93,11 +94,11 @@ class StartViewController: UIViewController {
             
             alertController.addAction(action_1)
             
-            alertController.view.tintColor = .systemOrange
+            alertController.view.tintColor = .systemBlue
             self.present(alertController, animated: true, completion: nil)
         }
-        print("Difficulty selected is:", difficulty)
-        //calling the download questions function with the previously entered parameteres
+        
+        print("Selected difficulty is:", difficulty)
         
     }
     
