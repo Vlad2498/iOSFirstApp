@@ -59,6 +59,7 @@ class ResultView: UIView {
 
         typeOfQuestionsLabel.translatesAutoresizingMaskIntoConstraints = false
         typeOfQuestionsLabel.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 20).isActive = true
+        typeOfQuestionsLabel.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, constant: -20).isActive = true
         typeOfQuestionsLabel.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
         
         
@@ -70,6 +71,8 @@ class ResultView: UIView {
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.topAnchor.constraint(equalTo: typeOfQuestionsLabel.bottomAnchor, constant: 20).isActive = true
+        imageView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, constant: -20).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
         imageView.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
         
         
