@@ -111,7 +111,7 @@ class StartViewController: UIViewController {
         }
         let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, error) in
             guard let data = data else {
-                print(error)
+                print(error!)
                 return
             }
             //print(String(data: data, encoding: .utf8))

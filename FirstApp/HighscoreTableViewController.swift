@@ -64,9 +64,10 @@ class HighscoreTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "highschoreIdentifier", for: indexPath)
 
         let gameResult = fetchedResultsController.object(at: indexPath)
-        
-//        cell.textLabel?.text = "Out of  \(gameResult.numberOfQuestions) questions you answered \(gameResult.rightAnswers) right."
-        cell.textLabel?.text = "\(gameResult.date!)"
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        cell.textLabel?.text = "You answered right \(gameResult.rightAnswers) out of \(gameResult.numberOfQuestions)"
+//        cell.textLabel?.text = "\(gameResult.date!)"
 
         return cell
     }

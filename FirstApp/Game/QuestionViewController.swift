@@ -108,17 +108,7 @@ class QuestionViewController: UIViewController {
                         
                     }
 
-            //        let action2 = UIAlertAction(title: "Great", style: .cancel) { (action:UIAlertAction) in
-            //            print("Pressed Great");
-            //            //self.navigationController?.popToRootViewController(animated: true) //go to the root view controller
-            //
-            //            //Load another view
-            //            self.performSegue(withIdentifier: "ResultView", sender: nil)
-            //
-            //            button.backgroundColor = .green
-            //            print("Went back to initial screen")
-            //        }
-
+            
                     let action3 = UIAlertAction(title: "Cancel", style: .destructive) { (action:UIAlertAction) in
                         print("Pressed Cancel");
                     }
@@ -204,7 +194,7 @@ class QuestionViewController: UIViewController {
     
     //MARK: - Saving the result
     private func saveGameResult() {
-        
+        let name = UserDefaults.standard.string(forKey: "username")!
         if gameResultDatabaseManager.create(withNumberOfQuestions: numberOfQuestions, withRightAnswer: rightAnswers) != nil {
             
             gameResultDatabaseManager.save()

@@ -52,8 +52,8 @@ class ResultView: UIView {
         //not working
         typeOfQuestionsLabel.lineBreakMode = .byWordWrapping
         typeOfQuestionsLabel.numberOfLines = 0
-        typeOfQuestionsLabel.layoutMargins.left = 10
-        typeOfQuestionsLabel.layoutMargins.right = 10
+        typeOfQuestionsLabel.textAlignment = .center
+
         
         addSubview(typeOfQuestionsLabel)
 

@@ -19,6 +19,7 @@ extension GameResult {
     @NSManaged public var numberOfQuestions: Int32
     @NSManaged public var rightAnswers: Int32
     @NSManaged public var date: Date?
+    
 
 }
 
